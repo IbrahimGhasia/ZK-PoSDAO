@@ -4,11 +4,11 @@ const Hero = () => {
 	return (
 		<div className="flex h-screen items-center justify-center border-2 border-pink-500">
 			<div className="px-56">
-				<h1 className="text-6xl text-pink-500">
-					<span className="text-purple-500 text-8xl font-bold">
-						ZK-PoSDAO
+				<h1 className="text-5xl text-pink-500">
+					<span className="text-purple-500 text-7xl font-bold">
+						zk-ΞPoSDAO
 					</span>{" "}
-					Decentralized Autonomous Organisation
+					Token-gated DAO
 				</h1>
 				<p className="text-white text-2xl mt-4 text-justify">
 					Lorem, ipsum dolor sit amet consectetur adipisicing elit.
