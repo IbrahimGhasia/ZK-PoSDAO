@@ -2,15 +2,15 @@ import Link from "next/link";
 
 const Hero = () => {
 	return (
-		<div className="flex h-screen items-center justify-center border-2 border-pink-500">
+		<div className="flex h-screen items-center justify-center border-4 border-purple-500 dark:border-pink-500">
 			<div className="px-56">
 				<h1 className="text-5xl text-pink-500">
-					<span className="text-purple-500 text-7xl font-bold">
+					<span className="text-purple-500 text-8xl font-bold">
 						zk-ΞPoSDAO
 					</span>{" "}
 					Token-gated DAO
 				</h1>
-				<p className="text-white text-2xl mt-4 text-justify">
+				<p className="dark:text-white text-2xl mt-4 text-justify">
 					Lorem, ipsum dolor sit amet consectetur adipisicing elit.
 					Aliquam sit, quia qui suscipit asperiores doloribus nihil
 					beatae dicta totam error cumque dignissimos et eum ad illum

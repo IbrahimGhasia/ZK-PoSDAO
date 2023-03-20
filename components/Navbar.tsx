@@ -24,13 +24,13 @@ const Navbar = () => {
 
 	return (
 		<div>
-			<nav className="w-full bg-black border-b-2 border-pink-500">
+			<nav className="w-full dark:bg-black border-b-2 border-pink-500">
 				<div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-0">
 					<div>
 						<div className="flex items-center justify-between py-3 md:py-5 md:block">
 							<Link href="/" legacyBehavior>
-								<a className="group text-white">
-									<span className="text-xl md:text-3xl font-bold duration-500 hover:text-pink-500">
+								<a className="group text-pink-500 dark:text-white">
+									<span className="text-xl md:text-3xl font-bold duration-500 hover:text-gray-700 dark:hover:text-pink-500">
 										zk-ΞPoSDAO
 									</span>
 									<br />
@@ -102,7 +102,7 @@ const Navbar = () => {
 								<li>
 									<img
 										src="/icons8-ethereum.svg"
-										className="border-2 rounded-full h-12 w-12 p-1 border-white"
+										className="border-2 rounded-full h-12 w-12 p-1 border-pink-500"
 									/>
 								</li>
 								<li>
@@ -127,6 +127,27 @@ const Navbar = () => {
 										</a>
 									</Link>
 								</li> */}
+								<li>
+									<label
+										htmlFor="red-toggle"
+										className="inline-flex relative items-center mr-5 cursor-pointer"
+									>
+										<input
+											type="checkbox"
+											value=""
+											id="red-toggle"
+											className="sr-only peer"
+										/>
+										<div
+											className="w-11 h-6 bg-gray-200 rounded-full dark:bg-gray-800 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-gray-800 after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-gray-300"
+											onClick={() => {
+												theme === "dark"
+													? setTheme("light")
+													: setTheme("dark");
+											}}
+										></div>
+									</label>
+								</li>
 							</ul>
 						</div>
 					</div>

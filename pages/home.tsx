@@ -7,20 +7,20 @@ export default function Home() {
 			<div className="mt-20">
 				<div>
 					<div className="flex justify-center items-center">
-						<span>
+						{/* <span>
 							<img
 								src="icons8-ethereum.svg"
 								className="h-36 w-36"
 							/>
-						</span>
-						<div className="text-center ml-10">
-							<h1 className="dark:text-pink-500 font-bold text-7xl">
+						</span> */}
+						<div className="text-center">
+							<h1 className="text-pink-500 font-bold text-8xl hover:cursor-pointer">
 								zk-ΞPoSDAO
 							</h1>
-							<p className="dark:text-gray-400 text-xl mt-5">
+							<p className="text-gray-500 dark:text-white text-xl mt-2">
 								Token-gated DAO using
 							</p>
-							<p className="dark:text-gray-400 text-xl">
+							<p className="text-gray-500 dark:text-white text-xl">
 								Proof Of Stake: Pages on Scroll L2
 							</p>
 						</div>
@@ -28,27 +28,27 @@ export default function Home() {
 				</div>
 
 				<div className="mt-10 pb-20">
-					<h1 className="dark:text-white text-center font-semibold text-5xl">
+					<h1 className="text-gray-600 dark:text-white text-center font-semibold text-5xl">
 						Proof of Stake: Pages (SBT) Contributors
 					</h1>
 
 					<div className="mt-5 px-28">
 						<label
 							htmlFor="large-input"
-							className="block mb-2 text-xl font-medium text-gray-400"
+							className="block mb-2 text-xl font-medium dark:text-white text-gray-500"
 						>
 							Are you a contributor of Proof of Stake: Pages?
 						</label>
 						<input
 							type="text"
 							id="large-input"
-							className="block w-full p-4 text-white border-2 border-pink-500 rounded-lg bg-black sm:text-md focus:ring-pink-800 focus:border-pink-800"
+							className="block w-full p-4 text-gray-500 dark:text-white border-2 border-pink-500 rounded-lg dark:bg-black bg-pink-50 sm:text-md focus:ring-pink-800 focus:border-pink-800"
 							// onChange={(e) => setOrgName(e.target.value)}
 							placeholder="Search by Ethereum address"
 						/>
 					</div>
 
-					<div className="mt-10 dark:text-gray-400 text-center text-xl">
+					<div className="mt-10 text-gray-500 dark:text-gray-400 text-center text-xl">
 						<p className="">
 							Traditional DAOs face issues such as low voter
 							turnout, voter apathy, and governance
@@ -64,7 +64,7 @@ export default function Home() {
 						</p>
 					</div>
 
-					<div className="mt-5 dark:text-gray-400 text-center text-xl">
+					<div className="mt-5 text-gray-500 dark:text-gray-400 text-center text-xl">
 						<p className="">
 							The zk-ΞPoSDAO leverages the power of zkSNARKs to
 							create a transparent and secure DAO.
